@@ -1,0 +1,111 @@
+:root {
+    --padding-left-rigth: 40px;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(tools/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: sans-serif;
+}
+
+.img {
+    height: 100vh;
+    width: 35vw;
+    background-image: url(tools/plant.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 5px;
+}
+
+figure {
+    width: 80px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo > p {
+    font-family:'Norse-Bold', sans-serif;
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+.container {
+    width: calc(100vw - 35vw);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.container .texts {
+    padding: 20px var(--padding-left-rigth);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container .texts .second-child {
+    margin-top: 18px;
+    padding: 0.1px;
+}
+
+
+form {
+    box-shadow: 0px 2px 7px #bbb;
+    padding: 15px 0;
+    padding-left: var(--padding-left-rigth);
+
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+form .paragraph {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container-inputs {
+    display: flex;
+    gap: 50px;
+}
+
+.left-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.rigth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+}
