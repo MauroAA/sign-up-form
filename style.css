@@ -127,7 +127,10 @@ input:focus {
 }
 
 label {
-    margin-top: 15px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
 }
 
 .buttons {
