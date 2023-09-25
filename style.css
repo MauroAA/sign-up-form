@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap');
+
 :root {
     --padding-left-rigth: 40px;
+    --border-color-input : #E5E7EB;
+    --color-create-account : #596D48;
 }
 
 @font-face {
@@ -15,7 +19,7 @@
 
 body {
     display: flex;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .img {
@@ -28,13 +32,15 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 150px;
 
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
@@ -66,7 +72,7 @@ figure {
 
 .container .texts {
     padding: 20px var(--padding-left-rigth);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -87,7 +93,7 @@ form {
 }
 
 form .paragraph {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -108,4 +114,40 @@ form .paragraph {
 
 input {
     width: 100%;
+    border: 1px solid var(--border-color-input);
+    margin-bottom: 10px;
+    outline: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 1px solid rgba(108, 108, 233, 0.918);
+    box-shadow: 0px 2px 5px #000;
+}
+
+label {
+    margin-top: 15px;
+}
+
+.buttons {
+    padding: 0 var(--padding-left-rigth);
+}
+
+
+.buttons .create-account {
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 35px;
+    background-color: var(--color-create-account);
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.buttons a:last-child {
+    text-decoration: none;
+    margin-left: 5px;
+    color: var(--color-create-account);
+    font-weight: bold;
 }
